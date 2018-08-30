@@ -25,7 +25,7 @@ public class Client {
             DataInputStream dins = new DataInputStream(ins);
             DataOutputStream douts = new DataOutputStream(outs);
 
-            String message = args[0] + " " + args[1];
+            String message = args[0];
             String json = "{\"name\": \"Tom\", \"message\": " + message + "}";
             douts.writeUTF(json);
             douts.flush();
